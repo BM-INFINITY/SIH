@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Career Guidance</a>
+                <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile-assessment">Profile Assessment</a></li>
+                    <li><a href="#recommendations">Career Recommendations</a></li>
+                    <li><a href="#skills">Skill Development</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                <ul class="sidenav" id="mobile-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile-assessment">Profile Assessment</a></li>
+                    <li><a href="#recommendations">Career Recommendations</a></li>
+                    <li><a href="#skills">Skill Development</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h2>Welcome to Career Guidance</h2>
+                <p>Your future starts here. Get personalized career recommendations based on your interests and skills.</p>
+                <button id="getStartedButton" class="btn">Get Started</button>
+            </div>
+        </section>
+
+        <section id="questions">
+            <div class="container">
+                <h2>Profile Assessment</h2>
+                <form id="assessment-form">
+                    <div class="form-step">
+                        <h3>Step 1: Basic Information</h3>
+                        <div class="input-field col s12">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <button type="button" class="btn next-step">Next</button>
+                    </div>
+
+                    <div class="form-step" style="display: none;">
+                        <h3>Step 2: Interests</h3>
+                        <div class="input-field col s12">
+                            <textarea id="interests" name="interests" class="materialize-textarea" required></textarea>
+                            <label for="interests">What are your interests?</label>
+                        </div>
+                        <button type="button" class="btn prev-step">Previous</button>
+                        <button type="button" class="btn next-step">Next</button>
+                    </div>
+
+                    <div class="form-step" style="display: none;">
+                        <h3>Step 3: Skills</h3>
+                        <div class="input-field col s12">
+                            <textarea id="skills" name="skills" class="materialize-textarea" required></textarea>
+                            <label for="skills">What skills do you have?</label>
+                        </div>
+                        <button type="button" class="btn prev-step">Previous</button>
+                        <button type="submit" class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="recommendations">
+            <div class="container">
+                <h2>Career Recommendations</h2>
+                <div id="recommendations-list"></div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Skill Development</h2>
+                <div id="skill-recommendations"></div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <div class="input-field col s12">
+                        <input type="text" id="contact-name" name="contact-name" required>
+                        <label for="contact-name">Name</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="email" id="contact-email" name="contact-email" required>
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <textarea id="contact-message" name="contact-message" class="materialize-textarea" required></textarea>
+                        <label for="contact-message">Message</label>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="container">
+            <p class="center-align">&copy; 2024 Career Guidance Platform. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

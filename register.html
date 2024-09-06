@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Career Guidance Platform</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="center-align">Register</h2>
+        <form id="register-form" class="col s12">
+            <div class="input-field col s12">
+                <input id="register-email" type="email" class="validate" required>
+                <label for="register-email">Email</label>
+            </div>
+            <div class="input-field col s12">
+                <input id="register-password" type="password" class="validate" required>
+                <label for="register-password">Password</label>
+            </div>
+            <div class="input-field col s12">
+                <input id="register-confirm-password" type="password" class="validate" required>
+                <label for="register-confirm-password">Confirm Password</label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit">Register</button>
+        </form>
+        <p class="center-align">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/login.js"></script>
+</body>
+</html>
