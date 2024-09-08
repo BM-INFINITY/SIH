@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareerNavigator</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+   <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <!-- Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="progress-bar"></div>
+</div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">CareerNavigator</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#assessment">Career Assessment</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div><!-- Dark Mode Toggle -->
+      <button id="dark-mode-toggle" class="btn btn-outline-light">Dark Mode</button>
+      </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container">
+      <h1>Find Your Perfect Career Path</h1>
+      <p>Discover careers that match your skills and interests with our personalized assessment tools.</p>
+      <a href="#assessment" class="btn btn-primary">Start Your Journey</a>
+    </div>
+  </header>
+
+ <!-- Features Section -->
+<section id="features" class="features">
+  <div class="container">
+    <h2>Explore Our Features</h2>
+    <div class="row">
+      <!-- Personalized Assessments -->
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-person-bounding-box"></i>
+          <h4>Personalized Assessments</h4>
+          <p>Identify your strengths, interests, and values to match the best career paths.</p>
+        </div>
+      </div>
+      <!-- Career Insights -->
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-bar-chart-line"></i>
+          <h4>Career Insights</h4>
+          <p>Get insights into various industries, job trends, and salary expectations.</p>
+        </div>
+      </div>
+      <!-- Job Search Tools -->
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-briefcase-fill"></i>
+          <h4>Job Search Tools</h4>
+          <p>Find job listings, create resumes, and explore networking opportunities.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <!-- Dynamic Skill Building -->
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-lightbulb"></i>
+          <h4>Dynamic Skill Building</h4>
+          <p>Receive personalized recommendations on skills to develop based on your career goals.</p>
+        </div>
+      </div>
+      <!-- Career Comparison Tool -->
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-compare"></i>
+          <h4>Career Comparison Tool</h4>
+          <p>Compare different career paths based on skills, salary, and job market trends.</p>
+        </div>
+      </div>
+      <!-- Custom Career Path Planner -->
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-calendar-check"></i>
+          <h4>Custom Career Path Planner</h4>
+          <p>Create a personalized career path with actionable steps and milestones.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Career Roadmap Section -->
+<section id="roadmap" class="roadmap">
+  <div class="container">
+    <h2>Career Roadmap</h2>
+    <div class="timeline">
+      <div class="timeline-step">
+        <h4>Step 1</h4>
+        <p>Identify your interests and skills.</p>
+      </div>
+      <div class="timeline-step">
+        <h4>Step 2</h4>
+        <p>Explore matching career paths.</p>
+      </div>
+      <div class="timeline-step">
+        <h4>Step 3</h4>
+        <p>Develop necessary skills and knowledge.</p>
+      </div>
+      <div class="timeline-step">
+        <h4>Step 4</h4>
+        <p>Apply for jobs and internships.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Career Assessment Form  -->
+<section id="career-assessment" class="assessment">
+  <div class="container">
+    <h2>Career Assessment</h2>
+    <form id="career-assessment-form" action="/submit-assessment" method="POST">
+      <div class="form-group">
+        <input type="text" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <select name="interests">
+          <option value="technology">Technology</option>
+          <option value="business">Business</option>
+          <option value="art">Art</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</section>
+
+
+ <!-- Skill Building Section -->
+<section id="skill-building" class="skill-building">
+  <div class="container">
+    <h2>Recommended Skills for You</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="text-center">Based on your interests and career path, here are some skills to focus on:</p>
+        <ul id="skill-list" class="list-group">
+          <!-- Dynamic content: Skills will be populated here via backend -->
+        </ul>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="#assessment" class="btn btn-primary">Update Skills</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Search & Filter -->
+<div class="search-bar">
+  <input type="text" id="search-career" placeholder="Search for a career...">
+</div>
+
+
+<!-- Career Comparison Section -->
+<section id="comparison" class="comparison">
+  <div class="container">
+    <h2>Compare Careers</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Career</th>
+          <th>Average Salary</th>
+          <th>Required Skills</th>
+          <th>Growth Rate</th>
+        </tr>
+      </thead>
+      <tbody>
+     <!-- Placeholder for backend data -->
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+
+
+  <!-- Footer -->
+  <!-- Footer -->
+
+        <!-- Footer -->
+    <!-- Footer -->
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>About Us</h5>
+          <p>CareerRoadmap helps you find your ideal career path with personalized assessments and job search tools. Were dedicated to guiding you towards fulfilling career opportunities that match your skills and interests.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled">
+              <li><i class="fas fa-phone-alt"></i> +91-123-456-7890</li>
+              <li><i class="fas fa-envelope"></i> info@careerroadmap.com</li>
+          </ul>
+        </div>
+        
+           
+        <div class="col-md-4">
+          <h5>Follow Us</h5>
+          <div class="social-icons">
+            <a href="https://www.facebook.com"target="_blank" class="fab fa-facebook-f" title="Facebook"></a>
+            <a href="https://www.x.com" target="_blank" title="x" social-icon><i class="fab fa-x"></i></a>
+            <a href="https://www.llinkedin.com" target="_blank" class="fab fa-linkedin-in" title="LinkedIn"></a>
+            <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram" title="Instagram"></a>
+          
+        </div>
+        
+        </div>
+        
+      </div>
+      <hr class="my-4">
+      <p>&copy; 2024 CareerRoadmap. All Rights Reserved.</p>
+    </div>
+  </footer>
+  
+  <!-- Font Awesome for Social Media Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS for Footer -->
+ 
+
+    
+
+
+
+
+
+
+  
+  
+  <!-- Font Awesome for Social Media Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+        
+  
+  <!-- Font Awesome for Social Media Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+  
+  <!-- Font Awesome for Social Media Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS for Footer -->
+  
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    window.onscroll = function () {
+      var scrollPos = window.scrollY;
+      var docHeight = document.body.scrollHeight - window.innerHeight;
+      var scrolled = (scrollPos / docHeight) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
+
+
+<script>
+  document.getElementById('search-career').addEventListener('input', function () {
+    const filter = this.value.toUpperCase();
+    const rows = document.querySelectorAll('#comparison tbody tr');
+
+    rows.forEach(row => {
+      const cells = row.querySelectorAll('td');
+      const career = cells[0].textContent.toUpperCase();
+      row.style.display = career.indexOf(filter) > -1 ? '' : 'none';
+    });
+  });
+</script>
+<!-- Link to JavaScript files -->
+<script src="api.js"></script>
+<script src="handle-assessment.js"></script>
+<script src="dark-mode.js"></script>
+<script>
+  // Placeholder function for backend data
+  function loadSkills() {
+    // In the future, replace this with an API call to your backend
+    const skills = [
+      'JavaScript', 
+      'Data Analysis', 
+      'Project Management', 
+      'SEO Optimization'
+    ];
+  
+    const skillList = document.getElementById('skill-list');
+    skillList.innerHTML = ''; // Clear existing content
+  
+    skills.forEach(skill => {
+      const li = document.createElement('li');
+      li.className = 'list-group-item';
+      li.textContent = skill;
+      skillList.appendChild(li);
+    });
+  }
+  
+  // Call the function to load skills when the page is ready
+  document.addEventListener('DOMContentLoaded', loadSkills);
+  </script>
+  
+  
+</body>
+</html>
