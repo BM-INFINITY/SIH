@@ -1,0 +1,400 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #7F7FD5, #86A8E7, #91EAE4);
+  color: #333;
+  padding-top: 70px;
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #333;
+}
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff !important;
+}
+.navbar-nav .nav-link {
+  font-size: 1.2rem;
+  color: #fff !important;
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffdd57 !important;
+}
+
+/* Header styling */
+.hero {
+  height: 90vh;
+  background: url('hero.png') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #e41616;
+}
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.hero p {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.hero .btn-primary {
+  background-color: #ffdd57;
+  color: #333;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.hero .btn-primary:hover {
+  background-color: #ffcc00;
+  color: #fff;
+}
+
+/* Updated Features Section */
+.features {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+.features h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.feature-card {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+.feature-card i {
+  font-size: 2.5rem;
+  color: #ffdd57;
+  margin-bottom: 20px;
+}
+.feature-card h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.feature-card p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+
+/* Career Assessment Section */
+.assessment {
+  padding: 80px 0;
+  background: linear-gradient(to right, #ffdd57, #f8f9fa);
+  color: #333;
+}
+.assessment h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.assessment-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.assessment-form input,
+.assessment-form select {
+  border-radius: 50px;
+  padding: 12px 20px;
+}
+.assessment-form .btn-primary {
+  background-color: #243B55;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+.assessment-form .btn-primary:hover {
+  background-color: #141E30;
+}
+
+/* Career Roadmap Section */
+.roadmap {
+  padding: 80px 0;
+  background: #f8f9fa;
+  text-align: center;
+}
+.roadmap h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.timeline {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  padding: 0 10px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ffdd57;
+}
+.timeline-step {
+  position: relative;
+  text-align: center;
+}
+.timeline-step h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.timeline-step p {
+  font-size: 1rem;
+  color: #333;
+}
+
+
+
+ /* Footer Styling */
+ .footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+.footer h5 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.footer p {
+  margin: 0;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer a:hover {
+  color: #ffdd57;
+}
+.footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+.footer .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.footer .social-icons a:hover {
+  color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+.footer .social-icons .fab.fa-facebook-f {
+  background-color: #3b5998;
+}
+.footer .social-icons .fab.fa-x-twitter {
+  background-color: #000000; /* Black color for X */
+  color: white; /* White color for the X icon */
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.footer .social-icons .fab.fa-linkedin-in {
+  background-color: #0077b5;
+}
+.footer .social-icons .fab.fa-instagram {
+  background-color: #c13584;
+}
+.footer .list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.footer .list-unstyled li {
+  margin-bottom: 10px;
+}
+.footer .list-unstyled li a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 5px 0;
+  transition: color 0.3s ease;
+}
+.footer .list-unstyled li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffdd57;
+  transition: width 0.3s ease;
+}
+.footer .list-unstyled li a:hover::after {
+  width: 100%;
+}
+.footer .about-us, .footer .quick-links {
+  background: linear-gradient(135deg, #4a4a4a, #2b2b2b);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+}
+.footer .about-us h5, .footer .quick-links h5 {
+  color: #ffdd57;
+  margin-bottom: 15px;
+}
+.footer .about-us p, .footer .quick-links ul {
+  color: #e0e0e0;
+}
+.footer .quick-links ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 100%;
+  height: 10px;
+  background-color: #f8f9fa;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: #ffdd57;
+  transition: width 0.3s ease;
+}
+
+/* Skill Building Section */
+.skill-building {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+  color: #333;
+}
+.skill-building h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.skill-building p {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#skill-list {
+  list-style-type: none;
+  padding: 0;
+}
+#skill-list .list-group-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Career Comparison Section */
+.comparison {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+.comparison h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.table-striped {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+/* Dark Mode Styling */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navbar {
+  background-color: #1f1f1f;
+}
+
+.dark-mode .btn {
+  background-color: #444444;
+  color: #ffffff;
+}
+
+.dark-mode .feature-card {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+/* Add more dark mode styles as needed */
+
+/* Search Bar */
+.search-bar {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.search-bar input {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  width: 300px;
+  transition: border 0.3s ease;
+}
+.search-bar input:focus {
+  outline: none;
+  border-color: #ffdd57;
+}
+/* Add to your existing styles.css */
+.comparison {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+.comparison h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.table {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
